@@ -1,35 +1,4 @@
-#include <iostream>
-#include <string>
-using namespace std;
-
-// Enum to represent batting style
-enum BattingStyle
-{
-    LeftHanded,
-    RightHanded
-};
-
-// Enum to represent player roles
-enum PlayerRole
-{
-    Batsman,
-    Bowler,
-    Wicketkeeper
-};
-
-// Struct to represent a player
-struct Player
-{
-    string name;
-    int matchesPlayed;
-    int runsScored;
-    BattingStyle battingStyle;
-    PlayerRole role;
-
-    // Constructor to initialize player details
-    Player(string n, int matches, int runs, BattingStyle style, PlayerRole r)
-        : name(n), matchesPlayed(matches), runsScored(runs), battingStyle(style), role(r) {}
-};
+#include "pointers.h"
 
 // Function to display player details using pointers
 void displayPlayerDetails(Player *player)
